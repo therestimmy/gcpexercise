@@ -46,7 +46,6 @@ or a bastion host, and set `enable_private_endpoint` to `true`.
 - terragrunt (confirmed working version 0.23.38)
 - kubectl (confirmed working version 1.17.0) with `~/.kube/config` file present in your home dir (see `providers.tf`)
 - VSCode (or your code editor of choice with Terraform & Terragrunt extensions installed)
-- (Optional) jq (any version)
 
 ## Instructions
 
