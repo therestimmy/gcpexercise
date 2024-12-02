@@ -3,8 +3,19 @@
 This module provisions the following resources: 
 - A new VPC network with public and private subnets in every availability zone of the specified region
 - Routing objects (e.g., cloud router, NAT gateways) to allow the subnets reach Internet
-- A Google Kubernetes Engine regional cluster
-- 2 node pools for the GKE cluster to be used instead of the default node pool
+- A Google Kubernetes Engine regional cluster with the following settings:
+  - Shielded nodes
+  - Private nodes
+  - Binary authorization
+  - Secret manager
+  - Workload identity
+  - Security posture set to `basic`
+  - Workload vulnerability scanning set to `basic`
+  - Private cluster setting (separate CIDR block dedicated for the control plane)
+  - DNS endpoint for external traffic
+  - Automatic node repair
+  - Automatic node upgrade
+- 2 node pools for the GKE cluster to be used instead of the default node pool (one on-demand, one spot)
 - An IAM membership to give the user identified by the `admin_email` parameter admin access to the GKE cluster
 - A service account named "developer" with a `container.clusterViewer` role for the GKE cluster 
 
