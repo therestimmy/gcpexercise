@@ -76,7 +76,6 @@ or a bastion host, and set `enable_private_endpoint` to `true`.
 | [google_service_account.kubernetes](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_service_account) | resource |
 | [google_container_cluster.gke_cluster](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster) | resource |
 | [google_container_node_pool.node-pool](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_node_pool) | resource |
-
 | [google_project_iam_member.gke_admin](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member) | resource |
 | [google_service_account.developer](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/service_account) | resource |
 | [google_project_iam_member.developer_gke_access](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/project_iam_member) | resource |
