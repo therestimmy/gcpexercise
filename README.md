@@ -22,7 +22,7 @@ This module provisions the following resources:
 ## Limitations
 - This code aims for an MVP level setup, and thus it only creates RBAC for 1 user; in order to set up RBAC for multiple users,
 the GCP project needs to have Organizations set up. That requires verification of either a business domain or a business email,
-none of which the author owns (sorry, I'm basic like that).
+neither of which the author owns (sorry, I'm basic like that).
 - For the same reason as the previous point, this code is meant to be ran from a machine outside of GCP (as opposed to a bastion host inside GCP infra); specifically that means `enable_private_endpoint` setting in the cluster is set to `false` to allow
 connection from the Internet, which isn't ideal. If you're planning to use this for real, set up either VPN into your GCP infra,
 or a bastion host, and set `enable_private_endpoint` to `true`.
