@@ -9,7 +9,7 @@ provider "kubernetes" {
 
 terraform {
   backend "gcs" {
-    bucket = "<YOUR_BUCKET_NAME>"
+    bucket = #"<YOUR_BUCKET_NAME>"
     prefix = "sandbox/terraform.tfstate"
   }
 

@@ -210,23 +210,23 @@ resource "google_project_iam_member" "developer_gke_access" {
 
 # Set up RBAC to bind the developer SA to the Kube 'view' role
 # Uncomment this part AFTER configuring cluster credentials
-resource "kubernetes_cluster_role_binding" "developer_readonly" {
-  metadata {
-    name = "developer-readonly-binding"
-  }
-
-  role_ref {
-    api_group = "rbac.authorization.k8s.io"
-    kind      = "ClusterRole"
-    name      = "view"
-  }
-
-  subject {
-    kind      = "ServiceAccount"
-    name      = "developer"
-    namespace = "default"
-  }
-  depends_on = [
-    google_container_cluster.gke_cluster
-  ]
-}
+#resource "kubernetes_cluster_role_binding" "developer_readonly" {
+#  metadata {
+#    name = "developer-readonly-binding"
+#  }
+#
+#  role_ref {
+#    api_group = "rbac.authorization.k8s.io"
+#    kind      = "ClusterRole"
+#    name      = "view"
+#  }
+#
+#  subject {
+#    kind      = "ServiceAccount"
+#    name      = "developer"
+#    namespace = "default"
+#  }
+#  depends_on = [
+#    google_container_cluster.gke_cluster
+#  ]
+#}

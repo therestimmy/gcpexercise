@@ -3,18 +3,18 @@ terraform {
 }
 
 inputs = {
-  #admin_email    = "<YOUR_ADMIN_EMAIL>"
-  #project_id     = "<YOUR_GCP_PROJECT_ID>"
-  #region         = "<REGION>"
+  admin_email    = #"<YOUR_ADMIN_EMAIL>"
+  project_id     = #"<YOUR_GCP_PROJECT_ID>"
+  region         = #"<REGION>"
 
-  #vpc_name            = "<VPC_NAME>"
-  public_subnet_cidr  = "<PUBLIC_CIDR>/20"
-  private_subnet_cidr = "<PRIVATE_CIDR>/20"
+  vpc_name            = #"<VPC_NAME>"
+  public_subnet_cidr  = #"<PUBLIC_CIDR>/20"
+  private_subnet_cidr = #"<PRIVATE_CIDR>/20"
   
-  #cluster_name           = "<CLUSTER_NAME>"
+  cluster_name           = #"<CLUSTER_NAME>"
   enable_private_nodes           = true
-  master_ipv4_cidr_block         = "<CONTROL_PLANE_CIDR>/28"
-  #master_authorized_network_cidr = "<AUTHORIZED_ACCESS_CIDR>"
+  master_ipv4_cidr_block         = #"<CONTROL_PLANE_CIDR>/28"
+  master_authorized_network_cidr = #"<AUTHORIZED_ACCESS_CIDR>"
   
   node_pools_configuration = {
     "ondemand" = {      
