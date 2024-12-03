@@ -49,7 +49,7 @@ or a bastion host, and set `enable_private_endpoint` to `true`.
 
 ## Instructions
 
-1. Clone this repo to a machine that has software from pre-requisites section (below) set up
+1. Clone this repo to a machine that has software from pre-requisites section set up
 2. Locate the Google Cloud project ID, admin user's email address and the bucket name to be used for backend
 3. Fill in the values for `project_id` and `admin_email` in the inputs section of terragrunt.hcl (along with any values you wish to override)
 4. Fill in the values for `bucket` and `prefix` in `backend "gcs"` section of providers.tf
