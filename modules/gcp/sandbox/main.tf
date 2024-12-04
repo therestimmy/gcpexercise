@@ -81,7 +81,7 @@ resource "google_container_cluster" "gke_cluster" {
   location            = var.region
   network             = google_compute_network.vpc.id
   subnetwork          = tostring(google_compute_subnetwork.private["${data.google_compute_zones.available.names[0]}"].id)
-  min_master_version  = "latest"
+  min_master_version  = var.min_master_version
 
   # Set up a regional cluster to span all private subnets
   node_locations = toset(data.google_compute_zones.available.names)
