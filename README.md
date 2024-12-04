@@ -81,7 +81,7 @@ or a bastion host, and set `enable_private_endpoint` to `true`.
 | [google_compute_subnetwork.public](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork) | resource |
 | [google_compute_route.public_route](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_route) | resource |
 | [google_compute_subnetwork.private](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork) | resource |
-| [google_compute_router_nat.nat](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_router_nat) | resource |
+| [google_compute_router_nat.nat_gateway](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_router_nat) | resource |
 | [google_compute_router.nat_router](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_router) | resource |
 | [google_service_account.kubernetes](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_service_account) | resource |
 | [google_container_cluster.gke_cluster](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/container_cluster) | resource |
