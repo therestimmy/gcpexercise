@@ -46,6 +46,12 @@ variable "cluster_name" {
   default     = "sandbox-cluster"
 }
 
+variable "min_master_version" {
+  description = "Minimum version of the master"
+  type        = string
+  default     = "1.31.3-gke.1006000"
+}
+
 variable "node_pools_configuration" {
   type = any
 
